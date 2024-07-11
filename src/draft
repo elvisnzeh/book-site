@@ -1,0 +1,98 @@
+// const [isCartVisible, setIsCartVisible] = useState(false); 
+// const toggleCartVisibility = () => {
+//     setIsCartVisible(!isCartVisible);
+//   };
+//   <h3>Cart</h3>
+//         <button onClick={toggleCartVisibility} className="btn-toggle-cart">
+//           {isCartVisible ? 'Hide Cart' : 'Show Cart'}
+//         </button>
+//         {isCartVisible && (
+//           cart.length === 0 ? (
+//             <p>No items</p>
+//           ) : (
+//             <ul>
+//               {cart.map((book, index) => (
+//                 <li key={index}>{book.title}</li>
+//               ))}
+//             </ul>
+//           )
+//         )}
+
+
+
+
+
+
+
+
+
+// how to add dele to the modals import React, { useContext } from "react";
+// import { PageContext } from "./UserContext";
+// import { TiShoppingCart } from "react-icons/ti";
+// import { AiFillDelete } from "react-icons/ai";
+// const Modals = () => {
+//   const { modals, SetModals, cart, setCart,setTotalPrice} = useContext(PageContext);
+
+//   const updateModals = () => {
+//     SetModals(!modals);
+//   };
+
+//   const clearAllTasks = () => {
+//     setCart([]);
+//     setTotalPrice(0)
+//   };
+
+//   return (
+//     <div>
+//       <button className="cart_btn" onClick={updateModals}>
+//         <TiShoppingCart />
+//       </button>
+
+//       {modals &&
+//         (cart.length === 0 ? (
+//           <p className="no_item">No item</p>
+//         ) : (
+//           <div className="cart-modal">
+//             <ul>
+//               <h5 className="h5">Your Items</h5> <br />
+//               {cart.map((book, index) => (
+//           <li key={index}> 
+//             <div className="book-title">{book.title}</div>   
+//           <img  className='imgg'src={book.imageSrc} alt={book.title} />
+//           <div className="book-price">${book.price}</div> 
+//         </li>
+//               ))}
+//               <button onClick={clearAllTasks} className="clearAllTasks">
+//               clearAll
+//               </button>
+//               <button className="Tasks">
+//               Buy
+//               </button>
+//               {/* <button className="buy">Buy</button> */}
+//             </ul>
+//           </div>
+//         ))}
+//     </div>
+//   );
+// };
+
+// export default Modals;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// {/* <div className="cart"></div> */}  <div className="border">
+//           {cart.length === 0 ? null : (
