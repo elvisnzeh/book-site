@@ -1,10 +1,10 @@
 import first from "./Assets/three.jpg";
 import one from "./Assets/one.jpg";
 import two from "./Assets/two.jpg";
-import three from "./Assets/three.jpg";
+// import three from "./Assets/three.jpg";
 import four from "./Assets/four.jpg";
 import five from "./Assets/five.jpg";
-import six from "./Assets/six.jpg";
+// import six from "./Assets/six.jpg";
 import s from "./Assets/s.jpg";
 import ss from "./Assets/ss.jpg";
 import sss from "./Assets/sss.jpg";

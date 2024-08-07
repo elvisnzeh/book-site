@@ -86,7 +86,18 @@
 
 
 
+// useEffect(() => {
+//     const handleClickOutside = (event) => {
+//       if (modalRef.current && !modalRef.current.contains(event.target)) {
+//         SetModals(false);
+//       }
+//     };
 
+//     document.addEventListener("mousedown", handleClickOutside);
+//     return () => {
+//       document.removeEventListener("mousedown", handleClickOutside);
+//     };
+//   }, [modalRef]);
 
 
 
@@ -96,3 +107,548 @@
 
 // {/* <div className="cart"></div> */}  <div className="border">
 //           {cart.length === 0 ? null : (
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media (max-width: 1025px)  {
+
+//     nav ul {
+//       display: none;
+//       position: absolute;
+//       height: 100%;
+//       align-items: center;
+//       width: 100%;
+//       right: 1rem;
+//     }
+  
+//     nav ul li {
+//       justify-content: center;
+//       align-items: center;
+//       position: relative;
+//       /* text-align: center; */
+//     }
+  
+//     nav .trigger {
+//       display: block;
+//       cursor: pointer;
+//       position: absolute;
+//       left: 19rem;
+//       font-size: 1rem;
+//       top: 0.5rem;
+//     }
+  
+//     nav ul.open {
+//       display: block;
+//     }
+  
+//   .nav-right {
+//     display: flex;
+//     align-items: center;
+//     list-style: none;
+//   }
+  
+  
+//   .dollar{
+//     cursor: pointer;
+//     position: absolute;
+//     left: 10rem;
+//     width: 3rem;
+//     font-size: 1rem;
+//     top: 0.5rem;
+//   }
+  
+  
+  
+//   .cart_btn{
+//     cursor: pointer;
+//     position: absolute;
+//     left: 15rem;
+//     font-size: 1rem;
+//     top: 0.6rem;
+//   }
+  
+//   .cart-count{
+//     cursor: pointer;
+//     position: absolute;
+//     left: 16rem;
+//     font-size: 0.43rem;
+//     top: 0.25rem;
+//     width: 1rem;
+//     height: 0.8rem 0.6rem;
+//     text-align: center;
+  
+//   }
+  
+//   .container .first{
+//   text-align: center;
+//   position: relative;
+//   width: 35em;
+//   position: relative;
+//   flex-direction: row;
+//   padding: 0.1rem;
+//   left: -5rem;
+//   }
+  
+//   .cart-modal ul{
+//   position: absolute;
+//   left: 10rem;
+//   height: 12rem;
+//   width: 9rem;
+//   top: -3.8rem;
+//   }
+  
+//   .cart-modal ul li{
+//   position: relative;
+//   left: 3rem;
+//   font-size: 0rem;
+//   }
+  
+  
+//   .first p{
+//   position: relative;
+//   left: -0.5rem;
+//   /* background-color: red; */
+//   font-size: 0.41rem;
+//   width: 5rem;
+//   height: 1rem;
+//   bottom: 0rem;
+//   margin-bottom: 0.5rem;
+//   }
+//   .first .btn2{
+//   text-align: center;
+//   position: relative;
+//   width: 2.8rem;
+//   left: -0.5rem;
+//   font-size: 0.5rem;
+//   bottom: 0.9em;
+//   }
+  
+  
+  
+//   .first img{
+//   position: relative;
+//   left: -3rem;
+//   font-size: 8rem;
+//   }
+  
+//   .cart-modal {
+//   position: relative;
+//   top: 5rem;
+//   left: 0;
+//   right: 0;
+//   }
+  
+//   .no_item{
+//   position: relative;
+//   left: 0.2rem;
+//   font-size: 0.5rem;
+//   }
+  
+//   .release{
+//   font-size: 0.5rem;
+//   }
+  
+//   .container1{
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   position: relative;
+//   width: 100%;
+//   font-size: 0rem;
+//   left: 7rem;
+//   }
+  
+//   .container2 .first2{
+//     text-align: center;
+//     position: relative;
+//     width: 34em;
+//     position: relative;
+//     flex-direction: row;
+//     padding: 0.1rem;
+//     left: -0rem;
+//   top: -3rem;
+  
+//   }
+  
+//   .first2 h4{
+//   position: relative;
+//   left: -0.5rem;
+//   /* background-color: red; */
+//   font-size: 0.41rem;
+//   width: 5rem;
+//   height: 1rem;
+//   bottom: 0rem;
+//   margin-bottom: 0.5rem;
+  
+//   }
+  
+//   .first2 .btn22{
+//   text-align: center;
+//   position: relative;
+//   width: 2.8rem;
+//   left: -0.5rem;
+//   font-size: 0.5rem;
+//   bottom: 0.9em;
+//   }
+  
+  
+//   .first2 img{
+//   position: relative;
+//   left: 0rem;
+//   font-size: 1rem;
+//   /* height: 36rem; */
+//   }
+  
+//   .container3{
+//   display: flex;
+//   flex-direction: column;
+//   position: relative;
+//   left: 5rem;
+//   }
+  
+//   .container4{
+//   display: flex;
+//   flex-direction: column;
+//   position: relative;
+//   left: 5rem;
+//   }
+  
+//   .book-title{
+//   font-size: 0.5rem;
+//   position: relative;
+//   left: 3rem;
+//   width: 4rem;
+//   }
+  
+//   .imgg{
+//   height: 5rem;
+//   }
+  
+//   .book-price{
+//   font-size: 0.5rem;
+//   }
+  
+//   .delete-btn{
+//   position: relative;
+//   left: -0.6rem;
+//   font-size: 0.58rem;
+//   width: 1rem;
+//   bottom: 6.6rem;
+//   }
+  
+//   h5{
+//   position: relative;
+//   left: 0.2rem;
+//   font-size: 0.9rem;
+//   font-weight: 0.2rem;
+//   color: green;
+//   }
+  
+//   .clearAllTasks{
+//   position: relative;
+//   font-size: 1rem;
+//   top: 2rem;
+//   }
+  
+//   .Tasks{
+//   position: relative;
+//   left: -3rem;
+//   font-size: 1rem;
+//   top: 2rem;
+//   }
+  
+//   }
+  
+//   @media (max-width: 770px) {
+  
+//     body{
+//       width: 100%;
+//       overflow-x: hidden;
+//       left: 0;
+//     }
+   
+  
+//       nav ul {
+//         display: none;
+//         position: absolute;
+//         align-items: center;
+//         width: auto;
+//         right: 6rem;
+//       }
+    
+//       nav ul li {
+//         justify-content: center;
+//         align-items: center;
+//         position: relative;
+//         left: -10rem;
+//         font-size: 0.5rem;
+//         text-align: center;
+//       }
+    
+//       nav .trigger {
+//         display: block;
+//         position: absolute;
+//         left: -4rem;
+//         font-size: 1rem;
+//         top: 0.5rem;
+//       }
+    
+//       nav ul.open {
+//         display: block;
+//       }
+   
+//     .nav-right {
+//       display: flex;
+//       align-items: center;
+//       list-style: none;
+//     }
+  
+  
+//     .dollar{
+//       position: absolute;
+//       left: -9.5rem;
+//       width: 3rem;
+//       font-size: 0.9rem;
+//       top: 0.5rem;
+//     }
+  
+  
+  
+//     .cart_btn{
+//       cursor: pointer;
+//       position: absolute;
+//       left: 4rem;
+//       font-size: 1rem;
+//       top: 0.6rem;
+//     }
+  
+//     .cart-count{
+//       cursor: pointer;
+//       position: absolute;
+//       left: 5rem;
+//       font-size: 0.43rem;
+//       top: 0.25rem;
+//       width: 1rem;
+//       height: 0.8rem 0.6rem;
+//       text-align: center;
+  
+//     }
+  
+//   .container .first{
+//     text-align: center;
+//     position: relative;
+//     /* background-color: red; */
+//     width: 15em;
+//     position: relative;
+//     left: 11.7rem;
+//     flex-direction: row;
+//     padding: 0.1rem;
+//   }
+  
+//   .cart-modal ul{
+//     position: absolute;
+//     left: 28rem;
+//     height: 10rem;
+//     width: 9rem;
+//     top: -3.8rem;
+//   }
+  
+//   .cart-modal ul li{
+//     position: relative;
+//     left: 3rem;
+//     font-size: 0rem;
+//      margin: 0;
+//   }
+    
+  
+//   .first p{
+//     position: relative;
+//     left: -0.5rem;
+//     /* background-color: red; */
+//     font-size: 0.41rem;
+//     width: 3rem;
+//     height: 1rem;
+//     bottom: 0rem;
+//     margin-bottom: 0.5rem;
+//   }
+//   .first .btn2{
+//     text-align: center;
+//     position: relative;
+//     width: 2.8rem;
+//     left: -0.5rem;
+//     font-size: 0.5rem;
+//     bottom: -2rem;
+//   }
+    
+  
+  
+//   .first img{
+//     position: relative;
+//     left: 0rem;
+//     font-size: 8rem;
+//   }
+  
+//   .cart-modal {
+//     position: relative;
+//     top: 5rem;
+//     left: 0;
+//     right: 0;
+//   }
+  
+//   .no_item{
+//     position: relative;
+//     left: 0.2rem;
+//     font-size: 0.5rem;
+//   }
+  
+//   .release{
+//     font-size: 0.5rem;
+//     left: 12rem;
+//   }
+  
+//   .release1{
+//    left: 12rem;
+  
+//   }
+  
+//   .container1{
+//     display: flex;
+//     flex-direction: column;
+//     position: relative;
+//     left: 11.3rem;
+//   }
+  
+//   .container2 .first2{
+//     text-align: center;
+//     position: relative;
+//     /* background-color: red; */
+//     width: 15em;
+//     position: relative;
+//     left: 12.4rem;
+//     flex-direction: row;
+//     padding: 0.1rem;
+//     top: -3rem;
+  
+//   }
+  
+//   .first2 h4{
+//     position: relative;
+//     left: -0.5rem;
+//     /* background-color: red; */
+//     font-size: 0.41rem;
+//     width: 2rem;
+//     height: 1rem;
+//     bottom: 0rem;
+//     margin-bottom: 0.5rem;
+  
+//   }
+  
+//   .first2 .btn22{
+//     text-align: center;
+//     position: relative;
+//     width: 2.8rem;
+//     left: -0.7rem;
+//     font-size: 0.4rem;
+//     color: red;
+//     top: 1em;
+//   }
+  
+  
+//   .first2 img{
+//     position: relative;
+//     left: 0rem;
+//     font-size: 8rem;
+//   }
+  
+//   .container3{
+//     display: flex;
+//     flex-direction: column;
+//     position: relative;
+//     left: 11rem;
+//   }
+  
+//   .container4{
+//     display: flex;
+//     flex-direction: column;
+//     position: relative;
+//     left: 11rem;
+//   }
+  
+//   .book-title{
+//    font-size: 0.5rem;
+//    position: relative;
+//    left: 1.9rem;
+//    width: 4rem;
+//    bottom: 2.5rem;
+//   }
+  
+//   .imgg{
+//     height: 2.8rem;
+//     width: 2rem;
+//   }
+  
+//   .book-price{
+//     font-size: 0.5rem;
+//     left: 2rem;
+//     bottom: 5rem;
+//   }
+  
+//   .delete-btn{
+//     position: relative;
+//     left: -0.6rem;
+//     font-size: 0.58rem;
+//     width: 1rem;
+//     bottom: 5.6rem;
+//   }
+  
+//   h5{
+//     position: relative;
+//     left: 3rem;
+//     font-size: 0.1rem;
+//     font-weight: 0.2rem;
+//     color: green;
+//   }
+  
+//   .your-items{
+//     position: relative;
+//     left: -2rem;
+//     color:green;
+//     font-size: 0.5rem;
+//     bottom: 1rem;
+//     margin-top: 0.2rem;
+//   }
+  
+//   .clearAllTasks{
+//     position: relative;
+//     font-size: 1rem;
+//     top: 2rem;
+//   }
+    
+//   .Tasks{
+//     position: relative;
+//     left: -3rem;
+//     font-size: 1rem;
+//     top: 2rem;
+//   }
+  
+//   }
+  
+
+// .container img,
+// .container .text {
+//   flex: 1;
+// }

@@ -1,0 +1,212 @@
+nav{
+    width: 100%; 
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    top: -2.49rem
+  
+  }
+  
+  nav ul {
+    list-style-type: none; 
+  width: 100%;
+    display: flex;
+    align-items: center;
+    list-style-type: none; 
+    background-color: white;
+    padding: 1%;
+  
+   
+  }
+  
+  nav ul li {
+    margin-left: 1rem;
+    list-style-type: none; 
+    
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: block;
+    padding: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  nav ul li a:not(.active):hover {
+    color: red;
+  }
+  
+  nav ul li a.active {
+    background-color: red;
+    border-radius: 0 0 10% 10%;
+    color: white;
+  }
+  
+  .logo {
+    width: 70px;
+    height: 50px;
+  }
+  
+  .noti,
+  .search,
+  .input {
+    position: relative;
+    right: 5%;
+  }
+  
+  .noti {
+    top: 0.3em;
+    position: relative;
+    right: 10rem;
+    font-size: 1.4rem;
+  }
+/*   
+  .dollar {
+    top: 0.2em;
+    right: 10rem;
+    font-size: 1.1rem;
+  } */
+
+  .dollar{
+    background-color: green;
+    color: white;
+    border-radius: 5rem;
+    width: 5%;
+    text-align: center;
+    padding: 0.5%;
+    position: absolute;
+    right: 13rem;
+    bottom: 2.5rem;
+  }
+  
+  .dollar:hover{
+    background-color: red;
+  }
+
+
+/* 
+  .cart {
+    position: fixed;
+    top: 2.5rem;
+    right: 1rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    width: 9%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  } */
+  
+  
+  
+  .cart-count {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    padding: 1px 5px;
+    right: 7.5rem;
+    top: 3.1rem;
+    font-size: 12px;
+    margin-left: 0px;
+    vertical-align: top;
+    overflow: hidden;
+  }
+  
+  
+  .cart_btn{
+    position: absolute;
+    right: 7.9rem;
+    bottom: 2.2rem;
+    width: 2rem;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cart_btn:hover{
+    color: green;
+  }
+  
+  
+  .cart-modal {
+    font-size: 0.5rem;
+    background-color: yellow; 
+    position: absolute;
+    top: 0.3rem;
+    right: 10rem;
+    margin-top: 0.8rem;
+    z-index: 1000; 
+  }
+  
+  .cart-modal ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 2.6rem;
+    right: -3rem;
+    height: 26rem;
+    text-align: center;
+    width: 20rem;
+    border: 0.1rem solid;
+    border-radius: 1rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+  }
+  
+  .cart-modal ul li{
+    text-align: center;
+    width: 14.9rem;
+    height: 7rem;
+    padding: 1.5rem;
+    position: relative;
+    left : -3%;
+    border: none;
+  }
+  
+  .cart-modal ul li:hover{
+    color:green;
+    cursor: pointer;
+  }
+
+  .trigger {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      color: black;
+      height: 100vh;
+      justify-content: center;
+      background-color: white;
+    }
+  
+    .navbar-links.Open {
+      display: flex;
+    }
+  
+    .trigger {
+      display: block;
+      color: black;
+      font-size: 2rem;
+      cursor: pointer;
+      margin-left: 21rem;
+      margin-top: 1rem;
+      position: absolute;
+      top: 1rem;
+    }
+  }
+  

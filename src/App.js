@@ -5,7 +5,7 @@ import Nav from "./Nav";
 import Blog from "./Blog";
 import Contact from "./Contact";
 import About from "./About";
-import Provider from "./UserContext";
+import {Provider} from "./UserContext";
 
 function App() {
   return (
